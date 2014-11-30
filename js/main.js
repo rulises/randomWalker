@@ -25,6 +25,9 @@ document.body.appendChild( renderer.domElement );
 function render() {
   requestAnimationFrame( render );
 
+  walker1.cube.rotation.x += 0.1;
+  walker1.cube.rotation.y += 0.1;
+
   renderer.render( scene, camera );
 }
 render();
